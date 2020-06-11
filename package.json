@@ -4,7 +4,9 @@
   "description": "Module for benchmarking MongoDB",
   "main": "./lib",
   "scripts": {
-    "start": "node dev.js",
+    "start": "node dev.js --bench-mode write",
+    "write-test": "node dev.js --bench-mode write",
+    "read-test": "node dev.js --bench-mode read",
     "lint": "eslint ."
   },
   "repository": {
